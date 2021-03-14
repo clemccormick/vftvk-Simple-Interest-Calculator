@@ -1,10 +1,14 @@
-function compute()
-{
-    p = document.getElementById("principal").value;
+function compute() {
+  p = document.getElementById("principal").value;
 
 }
-principal = "principal"
-rate = "rate"
-years = "years"
-interest = principal * years * rate / 100
-no_of_years = 2021 + years
+var principal = "principal";
+var rate = "rate";
+var years = "years";
+var interest = principal * years * rate / 100;
+var no_of_years = 2021 + years;
+
+function getrange() {
+    var rate = document.getElementById("rate").value;
+    var rateViewElement = document.getElementById("slider");
+    rateViewElement.textContent = rate + '%';
