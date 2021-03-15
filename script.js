@@ -1,14 +1,12 @@
 function compute() {
-  p = document.getElementById("principal").value;
+  var principal = parseInt(document.getElementById("principal").value, 10);
+  var rate = parseFloat(document.getElementById("rate").value, 10);
+  var years = parseFloat(document.getElementById("years").value, 10);
+  var n = new Date();
+  var y = n.getFullYear() + years
+  var interest = principal * years * rate / 100;
+  var text = '<br> If you deposit <mark>' + principal + '</mark>, </br> at an interest rate of <mark>' + rate + '</mark>. </br> You  will receive an amount of <mark>' + interest + '</mark>, </br>in the year <mark>' + y + '</mark>.'
+
+  document.getElementById("result").innerHTML = text
 
 }
-var principal = "principal";
-var rate = "rate";
-var years = "years";
-var interest = principal * years * rate / 100;
-var no_of_years = 2021 + years;
-
-function getrange() {
-    var rate = document.getElementById("rate").value;
-    var rateViewElement = document.getElementById("slider");
-    rateViewElement.textContent = rate + '%';

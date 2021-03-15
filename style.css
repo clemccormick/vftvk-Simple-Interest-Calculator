@@ -1,19 +1,26 @@
 body {
   background-color: black;
-  font: "arial";
+  font: arial;
   color: white;
 }
 
 h1 {
   color: grey;
-  font: "verdana";
+  font: Verdana;
+  font-size: 30px;
 }
 
 .maindiv {
   background-color: white;
   color: black;
-  width: 300px;
+  width: 350px;
   padding: 20px;
   border-radius: 25px;
-  align-items: center;
+  margin: auto;
+}
+
+label{
+  display: inline-block;
+  text-align: left;
+  width: 100px;
 }
